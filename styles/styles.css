@@ -45,6 +45,25 @@ header span {
   color: #34D1D1;
 }
 
+/*VIEW CODE LINK*/
+.link-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: #F2F2F2;
+  background-color: #2F2235;
+  width: 200px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  margin: 40px auto;
+}
+
+
 /*SECTION DIVIDER*/
 
 .divider {

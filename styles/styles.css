@@ -231,6 +231,41 @@ input {
   background-color: #F2F2F2;
 }
 
+/*MEDIA QUERY NAV HEADER */
+@media screen and (min-width: 640px) {
+  .profile h3 {
+    display: none;
+  }
+  
+  .nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #D1D2D3;
+  }
+  
+  .nav-items {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: #D1D2D3;
+    height: 62px;
+  }
+  
+  .nav-items a {
+    padding: 10px 30px;
+    background-color: #D1D2D3;
+
+  }
+  
+  .nav-pic {
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+  }
+}
+
 /*MEDIA QUERY AT 500PX ACCORDION TABS*/
 @media screen and (max-width: 500px) {
   
@@ -306,5 +341,4 @@ input {
   
 }
 
-/*MEDIA QUERY NAV HEADER */
 

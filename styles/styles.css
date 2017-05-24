@@ -125,6 +125,44 @@ article h3 {
   display: none;
 }
 
+/*FLEXIBLE CARDS*/
+.flexible-cards {
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+}
+
+.narrow-card {
+  max-width: 190px;
+}
+
+.wide-card {
+  max-width: 390px;
+}
+
+.card-wrapper h1 {
+  border: 2px solid #D1D2D3;
+  border-bottom: none;
+  margin: 0px;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-family: "Open Sans", cursive;
+  font-weight: 600;
+}
+
+.card-wrapper img {
+  margin: 0px;
+}
+
 /*MEDIA QUERY AT 500PX*/
 @media screen and (max-width: 500px) {
   
@@ -172,6 +210,29 @@ article h3 {
   #tab2a, #tab3a, #tab4a {
     border-top: none;
   }
+}
+
+@media screen and (max-width: 520px) {
+  .flexible-cards {
+    width: 100%;
+  }
+  
+  .card-wrapper {
+    margin: 5px auto;
+    width: 80vw;
+    max-width: 520px;
+  }
+  
+}
+
+@media screen and (max-width: 765px) {
+  .card-wrapper:nth-last-of-type(1){ order: 1; }
+  .card-wrapper:nth-last-of-type(2){ order: 2; }
+  .card-wrapper:nth-last-of-type(3){ order: 3; }
+  .card-wrapper:nth-last-of-type(4){ order: 4; }
+  .card-wrapper:nth-last-of-type(5){ order: 5; }
+  .card-wrapper:nth-last-of-type(6){ order: 7; }
+  .card-wrapper:nth-last-of-type(7){ order: 6; }
   
 }
 

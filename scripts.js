@@ -15,9 +15,7 @@ $('.mobile-tab').on('click', function() {
   $('.' + selector).show();
 });
 
-// $('.nav-items').hide();
 $('.profile').on('click', function() {
-  console.log('boom');
   let $navItems = $('.nav-items');
   $navItems.toggleClass('hidden');
-})
+});

@@ -14,3 +14,10 @@ $('.mobile-tab').on('click', function() {
   let selector = $(this).attr('id');
   $('.' + selector).show();
 });
+
+// $('.nav-items').hide();
+$('.profile').on('click', function() {
+  console.log('boom');
+  let $navItems = $('.nav-items');
+  $navItems.toggleClass('hidden');
+})
